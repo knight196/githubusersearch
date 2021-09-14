@@ -10,10 +10,10 @@ var search = document.getElementById('input').value;
 
 var originalName = search.split(' ').join('')
 
-fetch('https://api.github.com/users'+originalName)
+fetch('https://api.github.com/users/'+originalName)
 .then(response => response.json())
 .then((data) => {
-  console.log(data);
+
   document.getElementById('result').innerHTML = `
 <img src="${data.avatar_url}"/>
 <p>${data.login}</p>
