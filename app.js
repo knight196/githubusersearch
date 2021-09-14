@@ -3,7 +3,7 @@ var button = document.getElementById('search');
 
 button.addEventListener('click', () => {
 
-  document.getElementById('input').addEventListener('change', pop);
+  document.getElementById('input').addEventListener('click', pop);
 
 
 function pop(){
